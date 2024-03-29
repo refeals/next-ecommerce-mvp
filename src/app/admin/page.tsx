@@ -1,15 +1,3 @@
-import Link from "next/link"
-import {
-  Activity,
-  ArrowUpRight,
-  CircleUser,
-  CreditCard,
-  DollarSign,
-  Menu,
-  Package2,
-  Search,
-  Users,
-} from "lucide-react"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -21,16 +9,6 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { Input } from "@/components/ui/input"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import {
   Table,
   TableBody,
   TableCell,
@@ -40,6 +18,14 @@ import {
 } from "@/components/ui/table"
 import db from "@/db/db"
 import { formatCurrency, formatNumber } from "@/lib/formatter"
+import {
+  Activity,
+  ArrowUpRight,
+  CreditCard,
+  DollarSign,
+  Users,
+} from "lucide-react"
+import Link from "next/link"
 
 async function getSalesData() {
   const data = await db.order.aggregate({
@@ -299,7 +285,7 @@ export default async function AdminDashboard() {
           <CardContent className="grid gap-8">
             <div className="flex items-center gap-4">
               <Avatar className="hidden h-9 w-9 sm:flex">
-                <AvatarImage src="/avatars/01.png" alt="Avatar" />
+                {/* <AvatarImage src="/avatars/01.png" alt="Avatar" /> */}
                 <AvatarFallback>OM</AvatarFallback>
               </Avatar>
               <div className="grid gap-1">
@@ -314,7 +300,7 @@ export default async function AdminDashboard() {
             </div>
             <div className="flex items-center gap-4">
               <Avatar className="hidden h-9 w-9 sm:flex">
-                <AvatarImage src="/avatars/02.png" alt="Avatar" />
+                {/* <AvatarImage src="/avatars/02.png" alt="Avatar" /> */}
                 <AvatarFallback>JL</AvatarFallback>
               </Avatar>
               <div className="grid gap-1">
@@ -327,7 +313,7 @@ export default async function AdminDashboard() {
             </div>
             <div className="flex items-center gap-4">
               <Avatar className="hidden h-9 w-9 sm:flex">
-                <AvatarImage src="/avatars/03.png" alt="Avatar" />
+                {/* <AvatarImage src="/avatars/03.png" alt="Avatar" /> */}
                 <AvatarFallback>IN</AvatarFallback>
               </Avatar>
               <div className="grid gap-1">
@@ -342,7 +328,7 @@ export default async function AdminDashboard() {
             </div>
             <div className="flex items-center gap-4">
               <Avatar className="hidden h-9 w-9 sm:flex">
-                <AvatarImage src="/avatars/04.png" alt="Avatar" />
+                {/* <AvatarImage src="/avatars/04.png" alt="Avatar" /> */}
                 <AvatarFallback>WK</AvatarFallback>
               </Avatar>
               <div className="grid gap-1">
@@ -353,7 +339,7 @@ export default async function AdminDashboard() {
             </div>
             <div className="flex items-center gap-4">
               <Avatar className="hidden h-9 w-9 sm:flex">
-                <AvatarImage src="/avatars/05.png" alt="Avatar" />
+                {/* <AvatarImage src="/avatars/05.png" alt="Avatar" /> */}
                 <AvatarFallback>SD</AvatarFallback>
               </Avatar>
               <div className="grid gap-1">

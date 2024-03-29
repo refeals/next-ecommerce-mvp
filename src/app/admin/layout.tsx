@@ -1,3 +1,4 @@
+import { DarkModeToggle } from "@/components/DarkModeToggle"
 import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
@@ -124,6 +125,8 @@ export default function AdminLayout({
               />
             </div>
           </form>
+
+          <DarkModeToggle />
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="secondary" size="icon" className="rounded-full">
